@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "tema": "Documentacao",
+    "palavras_chave": ["CPF", "cadastro pessoa fisica", "receita federal", "documento", "numero CPF"],
+    "pergunta": "Como tirar o CPF?",
+    "orientacao": "O CPF pode ser emitido gratuitamente pela internet no site da Receita Federal (servicos.receita.fazenda.gov.br), em agencias do Banco do Brasil, Caixa Economica Federal ou Correios. Para menores de 16 anos, o responsavel legal deve comparecer com documento de identificacao. Documentos necessarios: certidao de nascimento ou documento de identidade com foto, titulo de eleitor (se maior de 18 anos). O numero do CPF tambem pode ser consultado pelo site da Receita Federal.",
+    "referencia": "Receita Federal — https://www.gov.br/receitafederal/pt-br/assuntos/meu-cpf",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [2, 3]
+  },
+  {
+    "id": 2,
+    "tema": "Documentacao",
+    "palavras_chave": ["RG", "carteira identidade", "registro geral", "documento identificacao", "CIN", "identidade", "identidade nacional", "documento de identidade", "carteira"],
+    "pergunta": "Como tirar o RG (Carteira de Identidade Nacional)?",
+    "orientacao": "A nova Carteira de Identidade Nacional (CIN) substituiu o antigo RG e e emitida com base no CPF como numero unico. O agendamento e feito nos Institutos de Identificacao ou Poupatempo do seu estado. Documentos necessarios: certidao de nascimento ou casamento e CPF. A primeira via e gratuita. A CIN tem validade de 10 anos para adultos e 5 anos para menores de 12 anos.",
+    "referencia": "Gov.br — https://www.gov.br/governodigital/pt-br/identidade/carteira-de-identidade-nacional",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [1, 4]
+  },
+  {
+    "id": 3,
+    "tema": "Documentacao",
+    "palavras_chave": ["CNH", "carteira habilitacao", "motorista", "dirigir", "Detran"],
+    "pergunta": "Como tirar a CNH (Carteira Nacional de Habilitacao)?",
+    "orientacao": "Para obter a CNH, o candidato deve: 1) Ter no minimo 18 anos; 2) Saber ler e escrever; 3) Possuir documento de identidade e CPF; 4) Procurar o Detran ou um CFC (Centro de Formacao de Condutores) credenciado. Etapas: exame medico e psicotecnico, curso teorico (45h), prova teorica, aulas praticas (minimo 20h) e prova pratica. O processo tem custo variavel por estado. A CNH pode ser acompanhada pelo app Carteira Digital de Transito.",
+    "referencia": "Detran — https://www.gov.br/senatran/pt-br/assuntos/habilitacao",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [1, 2]
+  },
+  {
+    "id": 4,
+    "tema": "Documentacao",
+    "palavras_chave": ["passaporte", "viagem internacional", "policia federal", "documento viagem"],
+    "pergunta": "Como tirar o passaporte?",
+    "orientacao": "O passaporte brasileiro e emitido pela Policia Federal. Passos: 1) Preencher formulario online no site da PF; 2) Pagar a GRU (taxa de R$ 257,25 em 2026); 3) Agendar atendimento presencial em um posto da Policia Federal; 4) Comparecer com documentos originais: identidade, CPF, titulo de eleitor (homens: comprovante de quitacao militar). O prazo de emissao e de ate 6 dias uteis apos o atendimento. O passaporte tem validade de 10 anos.",
+    "referencia": "Policia Federal — https://www.gov.br/pf/pt-br/assuntos/passaporte",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [1, 2]
+  },
+  {
+    "id": 5,
+    "tema": "Documentacao",
+    "palavras_chave": ["certidao nascimento", "registro civil", "cartorio", "nascimento"],
+    "pergunta": "Como obter a certidao de nascimento?",
+    "orientacao": "A certidao de nascimento e o primeiro documento do cidadao brasileiro. O registro deve ser feito em ate 15 dias apos o nascimento, no cartorio de registro civil mais proximo. Documentos necessarios: Declaracao de Nascido Vivo (DNV) emitida pelo hospital, documentos dos pais (RG e CPF). A primeira via e gratuita. Para segunda via, procurar o cartorio onde foi feito o registro original ou solicitar pela Central de Informacoes do Registro Civil (registrocivil.org.br).",
+    "referencia": "Gov.br — https://www.gov.br/pt-br/servicos/registrar-nascimento",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [1, 2]
+  },
+  {
+    "id": 6,
+    "tema": "Servicos Publicos",
+    "palavras_chave": ["SUS", "saude", "cartao SUS", "consulta medica", "posto saude", "UBS"],
+    "pergunta": "Como usar o SUS e obter o Cartao SUS?",
+    "orientacao": "O Sistema Unico de Saude (SUS) atende qualquer pessoa gratuitamente. Para obter o Cartao Nacional de Saude (CNS): apresente-se em uma UBS (Unidade Basica de Saude) com RG e CPF, ou cadastre-se pelo app Conecte SUS / portal Meu SUS Digital (meususdigital.saude.gov.br). Com o cartao, voce pode: consultas medicas, exames, internacoes, cirurgias, medicamentos gratuitos (Farmacia Popular), vacinacao e atendimento de urgencia (UPA/SAMU 192). Agende consultas pela UBS do seu bairro.",
+    "referencia": "Ministerio da Saude — https://meususdigital.saude.gov.br/",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [7, 9]
+  },
+  {
+    "id": 7,
+    "tema": "Servicos Publicos",
+    "palavras_chave": ["INSS", "aposentadoria", "beneficio", "previdencia", "pensao", "auxilio doenca"],
+    "pergunta": "Como acessar beneficios do INSS?",
+    "orientacao": "O INSS (Instituto Nacional do Seguro Social) oferece: aposentadoria, pensao por morte, auxilio-doenca, auxilio-acidente, salario-maternidade e BPC/LOAS. Para solicitar: 1) Acesse o Meu INSS (meu.inss.gov.br) ou ligue 135; 2) Faca login com conta Gov.br; 3) Selecione o beneficio desejado; 4) Anexe documentos necessarios (RG, CPF, carteira de trabalho, comprovantes de contribuicao). O atendimento presencial e feito em agencias do INSS mediante agendamento previo pelo 135 ou Meu INSS.",
+    "referencia": "INSS — https://meu.inss.gov.br/",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [6, 8]
+  },
+  {
+    "id": 8,
+    "tema": "Servicos Publicos",
+    "palavras_chave": ["Bolsa Familia", "programa social", "beneficio social", "transferencia renda", "CadUnico", "baixa renda", "ajuda governo", "familia pobre", "renda"],
+    "pergunta": "Como se cadastrar no Bolsa Familia?",
+    "orientacao": "O Bolsa Familia e um programa de transferencia de renda para familias em situacao de pobreza (renda per capita ate R$ 218/mes). Passos: 1) Procure o CRAS (Centro de Referencia de Assistencia Social) mais proximo; 2) Faca a inscricao no CadUnico (Cadastro Unico) com documentos de todos os membros da familia; 3) Apos o cadastro, o governo federal avalia automaticamente se a familia se enquadra nos criterios. Documentos: CPF ou titulo de eleitor do responsavel familiar, RG e CPF de todos, comprovante de residencia.",
+    "referencia": "Ministerio do Desenvolvimento Social — https://www.gov.br/mds/pt-br/acoes-e-programas/bolsa-familia",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [9, 7]
+  },
+  {
+    "id": 9,
+    "tema": "Servicos Publicos",
+    "palavras_chave": ["CadUnico", "cadastro unico", "programas sociais", "CRAS", "assistencia social"],
+    "pergunta": "O que e o CadUnico e como se inscrever?",
+    "orientacao": "O Cadastro Unico (CadUnico) e o registro que identifica familias de baixa renda (ate 3 salarios minimos) para acesso a programas sociais como Bolsa Familia, Tarifa Social de Energia, ID Jovem e outros. Para se inscrever: 1) Va ao CRAS da sua cidade com documentos de toda a familia; 2) O responsavel familiar (preferencialmente mulher) deve ter CPF ou titulo de eleitor; 3) Leve RG, CPF, certidao de nascimento/casamento e comprovante de residencia de todos. A inscricao e gratuita e deve ser atualizada a cada 2 anos.",
+    "referencia": "Ministerio do Desenvolvimento Social — https://cadunico.dataprev.gov.br/",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [8, 6]
+  },
+  {
+    "id": 10,
+    "tema": "Servicos Publicos",
+    "palavras_chave": ["Farmacia Popular", "medicamento gratuito", "remedio gratis", "remedio", "graca", "medicamento", "saude"],
+    "pergunta": "Como obter medicamentos gratuitos pela Farmacia Popular?",
+    "orientacao": "O programa Farmacia Popular oferece medicamentos gratuitos ou com desconto. Medicamentos 100% gratuitos incluem: tratamento de hipertensao, diabetes e asma. Para retirar: apresente receita medica valida (SUS ou particular), documento com foto e CPF em qualquer farmacia credenciada (identificada pelo adesivo 'Aqui tem Farmacia Popular'). A receita tem validade de 120 dias e pode ser usada ate 3 vezes. Lista completa de medicamentos disponiveis no site do Ministerio da Saude.",
+    "referencia": "Ministerio da Saude — https://www.gov.br/saude/pt-br/composicao/sctie/daf/programa-farmacia-popular",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [6]
+  },
+  {
+    "id": 11,
+    "tema": "Orientacoes Comunitarias",
+    "palavras_chave": ["Procon", "consumidor", "reclamacao", "direito consumidor", "defesa consumidor"],
+    "pergunta": "Como fazer uma reclamacao no Procon?",
+    "orientacao": "O Procon defende os direitos do consumidor. Para registrar reclamacao: 1) Primeiro, tente resolver diretamente com a empresa; 2) Se nao resolver, registre a reclamacao no consumidor.gov.br (plataforma federal) ou no Procon do seu estado/municipio; 3) Documentos necessarios: nota fiscal, contrato, protocolos de atendimento, prints de conversas; 4) O Procon notifica a empresa que tem ate 10 dias para responder. Voce tambem pode ligar para o Procon (numero varia por estado) ou ir pessoalmente. Prazos: produto com defeito pode ser trocado em 30 dias (nao duravel) ou 90 dias (duravel).",
+    "referencia": "Consumidor.gov.br — https://www.consumidor.gov.br/",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [12, 13]
+  },
+  {
+    "id": 12,
+    "tema": "Orientacoes Comunitarias",
+    "palavras_chave": ["inquilino", "aluguel", "direito morador", "despejo", "contrato aluguel", "locacao"],
+    "pergunta": "Quais sao os direitos do inquilino?",
+    "orientacao": "A Lei do Inquilinato (Lei 8.245/91) garante: 1) Receber o imovel em condicoes de uso; 2) Imovel so pode ser retomado nos casos previstos em lei; 3) Preferencia na compra do imovel em caso de venda; 4) Reajuste do aluguel somente no aniversario do contrato, pelo indice previsto (geralmente IGPM ou IPCA); 5) Despejo so por acao judicial (despejo extrajudicial e ilegal); 6) Devolucao do deposito caucao corrigido ao fim do contrato. Problemas estruturais sao responsabilidade do proprietario. Em caso de abuso, procure o Procon, Defensoria Publica ou Juizado Especial Civel.",
+    "referencia": "Planalto — https://www.planalto.gov.br/ccivil_03/leis/l8245.htm",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [11, 15]
+  },
+  {
+    "id": 13,
+    "tema": "Orientacoes Comunitarias",
+    "palavras_chave": ["MEI", "microempreendedor", "CNPJ", "abrir empresa", "empreendedor", "negocio", "formalizar", "formalizado"],
+    "pergunta": "Como se tornar MEI (Microempreendedor Individual)?",
+    "orientacao": "O MEI permite formalizar um pequeno negocio com CNPJ, emissao de notas fiscais e acesso a beneficios previdenciarios. Requisitos: faturamento anual de ate R$ 81.000, nao ser socio de outra empresa, ter no maximo 1 funcionario. Para se cadastrar: 1) Acesse o Portal do Empreendedor (gov.br/mei); 2) Faca login com conta Gov.br; 3) Preencha os dados do negocio; 4) O CNPJ e emitido na hora, sem custo. Custo mensal (DAS): R$ 71,60 (comercio/industria) ou R$ 75,60 (servicos) em 2026. Beneficios: aposentadoria, auxilio-doenca, salario-maternidade.",
+    "referencia": "Portal do Empreendedor — https://www.gov.br/empresas-e-negocios/pt-br/empreendedor",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [11, 14]
+  },
+  {
+    "id": 14,
+    "tema": "Orientacoes Comunitarias",
+    "palavras_chave": ["seguro desemprego", "demissao", "demitido", "trabalho", "direito trabalhador", "FGTS", "mandado embora", "emprego", "desempregado"],
+    "pergunta": "Como solicitar o seguro-desemprego?",
+    "orientacao": "O seguro-desemprego e um beneficio para trabalhadores demitidos sem justa causa. Requisitos: ter trabalhado pelo menos 12 meses (1a solicitacao), 9 meses (2a) ou 6 meses (3a em diante) nos ultimos meses anteriores a demissao. Para solicitar: 1) Acesse gov.br/trabalho ou app Carteira de Trabalho Digital; 2) Ou va a uma unidade do SINE; 3) Prazo: entre o 7o e o 120o dia apos a demissao. Documentos: numero do requerimento (fornecido pelo empregador), CPF, documento com foto. O pagamento e feito em 3 a 5 parcelas na Caixa Economica Federal.",
+    "referencia": "Gov.br — https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/seguro-desemprego",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [7, 13]
+  },
+  {
+    "id": 15,
+    "tema": "Orientacoes Comunitarias",
+    "palavras_chave": ["defensoria publica", "assistencia juridica", "justica gratuita", "advogado gratis"],
+    "pergunta": "Como acessar a Defensoria Publica?",
+    "orientacao": "A Defensoria Publica oferece assistencia juridica gratuita para quem nao pode pagar advogado. Tem direito: pessoas com renda familiar de ate 3 salarios minimos (criterio varia por estado). Atende questoes civeis, criminais, familia, consumidor, moradia, previdencia e mais. Para acessar: 1) Procure a Defensoria Publica do seu estado (pesquise 'Defensoria Publica + [seu estado]'); 2) Agende atendimento por telefone ou presencialmente; 3) Leve RG, CPF, comprovante de renda e de residencia, e documentos relacionados ao caso. O atendimento e sigiloso e gratuito.",
+    "referencia": "Defensoria Publica da Uniao — https://www.dpu.def.br/",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [12, 11]
+  },
+  {
+    "id": 16,
+    "tema": "Servicos Publicos",
+    "palavras_chave": ["tarifa social", "energia eletrica", "desconto luz", "conta luz", "baixa renda"],
+    "pergunta": "Como obter desconto na conta de luz (Tarifa Social)?",
+    "orientacao": "A Tarifa Social de Energia Eletrica (TSEE) oferece descontos de 10% a 65% na conta de luz para familias de baixa renda. Requisitos: estar inscrito no CadUnico com renda per capita de ate meio salario minimo, ou receber BPC/LOAS. O desconto e aplicado automaticamente apos a inscricao no CadUnico — a distribuidora de energia consulta os dados. Se nao for aplicado automaticamente, entre em contato com a distribuidora de energia da sua regiao com o NIS (Numero de Identificacao Social) e documento com foto.",
+    "referencia": "ANEEL — https://www.gov.br/aneel/pt-br/assuntos/tarifas/tarifa-social",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [9, 8]
+  },
+  {
+    "id": 17,
+    "tema": "Documentacao",
+    "palavras_chave": ["titulo eleitor", "eleicao", "voto", "TSE", "cadastro eleitoral"],
+    "pergunta": "Como tirar o titulo de eleitor?",
+    "orientacao": "O titulo de eleitor e obrigatorio para maiores de 18 anos e facultativo para jovens de 16-17 e maiores de 70. Para obter: 1) Acesse o Titulo Net no site do TSE (tse.jus.br) ou app e-Titulo; 2) Preencha o formulario online; 3) Agende e compareca ao cartorio eleitoral com RG, CPF e comprovante de residencia. Jovens a partir de 15 anos ja podem fazer o alistamento para votar aos 16. O e-Titulo funciona como documento digital com foto para identificacao na votacao.",
+    "referencia": "TSE — https://www.tse.jus.br/eleitor/titulo-de-eleitor",
+    "data_verificacao": "2026-10-01",
+    "topicos_relacionados": [1, 2]
+  }
+]

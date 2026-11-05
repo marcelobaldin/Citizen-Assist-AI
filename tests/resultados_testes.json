@@ -1,0 +1,203 @@
+{
+  "metricas": {
+    "total_testes": 15,
+    "acertos": 15,
+    "erros": 0,
+    "taxa_acerto_pct": 100.0,
+    "tempo_medio_seg": 0.000225,
+    "tempo_maximo_seg": 0.000322,
+    "data_execucao": "2026-11-04 21:01:27"
+  },
+  "resultados": [
+    {
+      "id_teste": 1,
+      "tipo": "direta",
+      "pergunta": "Como tirar o CPF?",
+      "id_esperado": 1,
+      "id_obtido": 1,
+      "score_relevancia": 0.3,
+      "correto": true,
+      "tempo_segundos": 0.000262,
+      "descricao": "Pergunta direta que corresponde exatamente a base"
+    },
+    {
+      "id_teste": 2,
+      "tipo": "direta",
+      "pergunta": "Como fazer uma reclamacao no Procon?",
+      "id_esperado": 11,
+      "id_obtido": 11,
+      "score_relevancia": 0.6533,
+      "correto": true,
+      "tempo_segundos": 0.000235,
+      "descricao": "Pergunta direta sobre direito do consumidor"
+    },
+    {
+      "id_teste": 3,
+      "tipo": "reformulada",
+      "pergunta": "Quero fazer meu documento de identidade, como faco?",
+      "id_esperado": 2,
+      "id_obtido": 2,
+      "score_relevancia": 0.515,
+      "correto": true,
+      "tempo_segundos": 0.000282,
+      "descricao": "Reformulacao da pergunta sobre RG/CIN"
+    },
+    {
+      "id_teste": 4,
+      "tipo": "reformulada",
+      "pergunta": "Preciso de remedio de graca, onde consigo?",
+      "id_esperado": 10,
+      "id_obtido": 10,
+      "score_relevancia": 0.6667,
+      "correto": true,
+      "tempo_segundos": 0.000228,
+      "descricao": "Reformulacao da pergunta sobre Farmacia Popular"
+    },
+    {
+      "id_teste": 5,
+      "tipo": "reformulada",
+      "pergunta": "Fui mandado embora do trabalho, tenho direito a algum beneficio?",
+      "id_esperado": 14,
+      "id_obtido": 14,
+      "score_relevancia": 0.6,
+      "correto": true,
+      "tempo_segundos": 0.000299,
+      "descricao": "Reformulacao da pergunta sobre seguro-desemprego"
+    },
+    {
+      "id_teste": 6,
+      "tipo": "direta",
+      "pergunta": "Como se tornar MEI?",
+      "id_esperado": 13,
+      "id_obtido": 13,
+      "score_relevancia": 0.15,
+      "correto": true,
+      "tempo_segundos": 0.0002,
+      "descricao": "Pergunta direta sobre microempreendedor"
+    },
+    {
+      "id_teste": 7,
+      "tipo": "reformulada",
+      "pergunta": "Quero abrir um pequeno negocio formalizado",
+      "id_esperado": 13,
+      "id_obtido": 13,
+      "score_relevancia": 0.78,
+      "correto": true,
+      "tempo_segundos": 0.000246,
+      "descricao": "Reformulacao sobre MEI sem usar a sigla"
+    },
+    {
+      "id_teste": 8,
+      "tipo": "direta",
+      "pergunta": "Quais sao os direitos do inquilino?",
+      "id_esperado": 12,
+      "id_obtido": 12,
+      "score_relevancia": 0.2,
+      "correto": true,
+      "tempo_segundos": 0.000209,
+      "descricao": "Pergunta direta sobre direitos de locacao"
+    },
+    {
+      "id_teste": 9,
+      "tipo": "fora_do_escopo",
+      "pergunta": "Como declarar o imposto de renda?",
+      "id_esperado": null,
+      "id_obtido": null,
+      "score_relevancia": 0.0,
+      "correto": true,
+      "tempo_segundos": 0.000218,
+      "descricao": "Tema nao coberto pela base de conhecimento"
+    },
+    {
+      "id_teste": 10,
+      "tipo": "fora_do_escopo",
+      "pergunta": "Qual o telefone da policia?",
+      "id_esperado": null,
+      "id_obtido": null,
+      "score_relevancia": 0.0,
+      "correto": true,
+      "tempo_segundos": 0.000251,
+      "descricao": "Informacao de emergencia fora do escopo"
+    },
+    {
+      "id_teste": 11,
+      "tipo": "caso_limite",
+      "pergunta": "",
+      "id_esperado": null,
+      "id_obtido": null,
+      "score_relevancia": 0.0,
+      "correto": true,
+      "tempo_segundos": 0.0,
+      "descricao": "Entrada vazia - caso limite"
+    },
+    {
+      "id_teste": 12,
+      "tipo": "caso_limite",
+      "pergunta": "asdfgh",
+      "id_esperado": null,
+      "id_obtido": null,
+      "score_relevancia": 0.0,
+      "correto": true,
+      "tempo_segundos": 0.00018,
+      "descricao": "Entrada sem sentido - caso limite"
+    },
+    {
+      "id_teste": 13,
+      "tipo": "caso_limite",
+      "pergunta": "documento",
+      "id_esperado": 1,
+      "id_obtido": 1,
+      "score_relevancia": 1.0,
+      "correto": true,
+      "tempo_segundos": 0.0002,
+      "descricao": "Consulta ambigua - retorna resultado mais relevante entre varios possiveis"
+    },
+    {
+      "id_teste": 14,
+      "tipo": "reformulada",
+      "pergunta": "Minha familia e de baixa renda, como pedir ajuda do governo?",
+      "id_esperado": 8,
+      "id_obtido": 8,
+      "score_relevancia": 0.7267,
+      "correto": true,
+      "tempo_segundos": 0.000322,
+      "descricao": "Reformulacao sobre Bolsa Familia / programas sociais"
+    },
+    {
+      "id_teste": 15,
+      "tipo": "direta",
+      "pergunta": "Como obter desconto na conta de luz?",
+      "id_esperado": 16,
+      "id_obtido": 16,
+      "score_relevancia": 0.755,
+      "correto": true,
+      "tempo_segundos": 0.000244,
+      "descricao": "Pergunta direta sobre Tarifa Social"
+    }
+  ],
+  "interpretacao": {
+    "analise": "O sistema obteve 100.0% de acerto em 15 testes. Tempo medio: 0.23ms. Perguntas diretas tiveram 100% de acerto. Reformulacoes apresentaram bom desempenho gracas a expansao de palavras-chave. Consultas fora do escopo e casos limite foram corretamente identificados.",
+    "melhorias_sugeridas": [
+      "Implementar sinonimos automaticos e expansao semantica de consultas",
+      "Adicionar processamento de linguagem natural (NLP) com stemming/lematizacao para variacoes morfologicas",
+      "Expandir a base de conhecimento com mais temas (educacao, transporte, habitacao)"
+    ],
+    "limitacoes_avaliacao": "Os testes sao baseados em correspondencia de ID, o que nao captura a qualidade subjetiva da orientacao. A amostra de 15 perguntas e pequena para validacao estatistica robusta. Uma avaliacao mais completa exigiria testes com usuarios reais e metricas de satisfacao."
+  },
+  "teste_usabilidade": {
+    "roteiro": [
+      "Tarefa 1: Encontre informacoes sobre como tirar o CPF usando o menu de temas",
+      "Tarefa 2: Use a busca por texto para descobrir como obter medicamentos gratuitos",
+      "Tarefa 3: A partir de um resultado, navegue para um topico relacionado",
+      "Tarefa 4: Altere o modo de resposta para conciso e faca uma nova consulta",
+      "Tarefa 5: Consulte o historico de buscas realizadas na sessao"
+    ],
+    "criterios_avaliacao": [
+      "Tempo para completar cada tarefa",
+      "Numero de erros ou tentativas necessarias",
+      "Satisfacao do usuario com a resposta obtida (escala 1-5)",
+      "Clareza das instrucoes e mensagens do sistema"
+    ],
+    "observacoes": "O teste de usabilidade deve ser conduzido com pelo menos 3 usuarios representativos do publico-alvo. Recomenda-se protocolo think-aloud."
+  }
+}

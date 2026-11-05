@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "tipo": "direta",
+    "pergunta": "Como tirar o CPF?",
+    "id_esperado": 1,
+    "descricao": "Pergunta direta que corresponde exatamente a base"
+  },
+  {
+    "id": 2,
+    "tipo": "direta",
+    "pergunta": "Como fazer uma reclamacao no Procon?",
+    "id_esperado": 11,
+    "descricao": "Pergunta direta sobre direito do consumidor"
+  },
+  {
+    "id": 3,
+    "tipo": "reformulada",
+    "pergunta": "Quero fazer meu documento de identidade, como faco?",
+    "id_esperado": 2,
+    "descricao": "Reformulacao da pergunta sobre RG/CIN"
+  },
+  {
+    "id": 4,
+    "tipo": "reformulada",
+    "pergunta": "Preciso de remedio de graca, onde consigo?",
+    "id_esperado": 10,
+    "descricao": "Reformulacao da pergunta sobre Farmacia Popular"
+  },
+  {
+    "id": 5,
+    "tipo": "reformulada",
+    "pergunta": "Fui mandado embora do trabalho, tenho direito a algum beneficio?",
+    "id_esperado": 14,
+    "descricao": "Reformulacao da pergunta sobre seguro-desemprego"
+  },
+  {
+    "id": 6,
+    "tipo": "direta",
+    "pergunta": "Como se tornar MEI?",
+    "id_esperado": 13,
+    "descricao": "Pergunta direta sobre microempreendedor"
+  },
+  {
+    "id": 7,
+    "tipo": "reformulada",
+    "pergunta": "Quero abrir um pequeno negocio formalizado",
+    "id_esperado": 13,
+    "descricao": "Reformulacao sobre MEI sem usar a sigla"
+  },
+  {
+    "id": 8,
+    "tipo": "direta",
+    "pergunta": "Quais sao os direitos do inquilino?",
+    "id_esperado": 12,
+    "descricao": "Pergunta direta sobre direitos de locacao"
+  },
+  {
+    "id": 9,
+    "tipo": "fora_do_escopo",
+    "pergunta": "Como declarar o imposto de renda?",
+    "id_esperado": null,
+    "descricao": "Tema nao coberto pela base de conhecimento"
+  },
+  {
+    "id": 10,
+    "tipo": "fora_do_escopo",
+    "pergunta": "Qual o telefone da policia?",
+    "id_esperado": null,
+    "descricao": "Informacao de emergencia fora do escopo"
+  },
+  {
+    "id": 11,
+    "tipo": "caso_limite",
+    "pergunta": "",
+    "id_esperado": null,
+    "descricao": "Entrada vazia - caso limite"
+  },
+  {
+    "id": 12,
+    "tipo": "caso_limite",
+    "pergunta": "asdfgh",
+    "id_esperado": null,
+    "descricao": "Entrada sem sentido - caso limite"
+  },
+  {
+    "id": 13,
+    "tipo": "caso_limite",
+    "pergunta": "documento",
+    "id_esperado": 1,
+    "descricao": "Consulta ambigua - retorna resultado mais relevante entre varios possiveis"
+  },
+  {
+    "id": 14,
+    "tipo": "reformulada",
+    "pergunta": "Minha familia e de baixa renda, como pedir ajuda do governo?",
+    "id_esperado": 8,
+    "descricao": "Reformulacao sobre Bolsa Familia / programas sociais"
+  },
+  {
+    "id": 15,
+    "tipo": "direta",
+    "pergunta": "Como obter desconto na conta de luz?",
+    "id_esperado": 16,
+    "descricao": "Pergunta direta sobre Tarifa Social"
+  }
+]
