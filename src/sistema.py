@@ -30,6 +30,40 @@ STOPWORDS = {
     "minha", "seu", "sua", "esse", "essa", "este", "esta", "isso", "isto", "ter",
     "ser", "foi", "sao", "tem", "nao", "mais", "muito", "ja", "ate", "tambem",
     "onde", "quando", "fui", "faco", "quero", "preciso", "posso", "tenho", "algum",
+    "consigo", "devo", "seria", "estou", "estava", "vou", "pode", "deve", "gostaria",
+    "favor", "obrigado", "obrigada", "ola", "oi", "bom", "boa", "dia", "noite",
+}
+
+SINONIMOS = {
+    "remedio": ["medicamento", "medicina", "farmaco"],
+    "medicamento": ["remedio", "medicina", "farmaco"],
+    "carteira": ["documento", "identidade"],
+    "identidade": ["documento", "carteira", "rg"],
+    "rg": ["identidade", "documento", "carteira"],
+    "emprego": ["trabalho", "servico", "ocupacao"],
+    "trabalho": ["emprego", "servico", "ocupacao"],
+    "demitido": ["demissao", "mandado", "desempregado", "desligado"],
+    "demissao": ["demitido", "mandado", "desempregado", "desligado"],
+    "aposentadoria": ["aposentar", "previdencia", "inss"],
+    "aposentar": ["aposentadoria", "previdencia", "inss"],
+    "gratis": ["gratuito", "graca", "gratuita", "livre"],
+    "gratuito": ["gratis", "graca", "gratuita", "livre"],
+    "graca": ["gratis", "gratuito", "gratuita"],
+    "aluguel": ["locacao", "inquilino", "moradia"],
+    "moradia": ["casa", "residencia", "imovel", "aluguel"],
+    "empresa": ["negocio", "empreendimento", "cnpj", "mei"],
+    "negocio": ["empresa", "empreendimento", "cnpj", "mei"],
+    "reclamacao": ["queixa", "denuncia", "problema"],
+    "desconto": ["reducao", "abatimento", "tarifa"],
+    "beneficio": ["auxilio", "ajuda", "programa", "bolsa"],
+    "auxilio": ["beneficio", "ajuda", "programa"],
+    "nascimento": ["nascer", "certidao", "registro"],
+    "habilitacao": ["cnh", "motorista", "dirigir"],
+    "cnh": ["habilitacao", "motorista", "dirigir", "carteira"],
+    "passaporte": ["viagem", "internacional", "policia federal"],
+    "advogado": ["defensoria", "juridico", "justica"],
+    "luz": ["energia", "eletrica", "conta"],
+    "energia": ["luz", "eletrica", "conta"],
 }
 
 # ---------- carregamento e validacao ----------
@@ -102,7 +136,7 @@ def obter_registro_por_id(base, rid):
 # ---------- algoritmo de busca ----------
 
 def normalizar(texto):
-    """Remove acentos simplificados e converte para minusculas."""
+    """Remove acentos, pontuacao e converte para minusculas."""
     texto = texto.lower().strip()
     substituicoes = {
         "á": "a", "à": "a", "ã": "a", "â": "a",
@@ -114,46 +148,76 @@ def normalizar(texto):
     }
     for original, substituto in substituicoes.items():
         texto = texto.replace(original, substituto)
+    texto = "".join(c if c.isalnum() or c.isspace() else " " for c in texto)
     return texto
+
+
+def expandir_sinonimos(palavras):
+    """Expande cada palavra com seus sinonimos, retornando {palavra_original: {ela + sinonimos}}."""
+    expandido = {}
+    for p in palavras:
+        variantes = {p}
+        if p in SINONIMOS:
+            variantes.update(SINONIMOS[p])
+        expandido[p] = variantes
+    return expandido
 
 
 def calcular_relevancia(consulta, registro):
     """Calcula pontuacao de relevancia entre consulta e registro."""
     consulta_norm = normalizar(consulta)
     todas_palavras = consulta_norm.split()
-    # filtra stopwords para scoring, mas mantem para contexto
     palavras_consulta = {p for p in todas_palavras if p not in STOPWORDS and len(p) > 1}
 
     if len(palavras_consulta) == 0:
         return 0.0
 
-    pontuacao = 0.0
+    # expande cada palavra com sinonimos
+    expansao = expandir_sinonimos(palavras_consulta)
+
+    # melhor score de cada palavra (cap por palavra, evita inflacao por multiplas keywords)
+    scores_palavra = {p: 0.0 for p in palavras_consulta}
 
     # palavras-chave do registro (peso maior — termos catalogados especificamente)
     for palavra_chave in registro["palavras_chave"]:
         pc_norm = normalizar(palavra_chave)
         pc_palavras = set(pc_norm.split())
         for palavra in palavras_consulta:
-            # correspondencia exata com termo da palavra-chave
-            if palavra in pc_palavras:
-                pontuacao += 5.0
-            # correspondencia parcial (substring)
-            elif len(palavra) > 3 and palavra in pc_norm:
-                pontuacao += 2.0
+            for variante in expansao[palavra]:
+                if variante in pc_palavras:
+                    # sinonimo pontua com peso levemente menor (3.5 vs 5.0)
+                    peso = 5.0 if variante == palavra else 3.5
+                    scores_palavra[palavra] = max(scores_palavra[palavra], peso)
+                    break
+                elif len(variante) > 3 and variante in pc_norm:
+                    peso = 2.0 if variante == palavra else 1.5
+                    scores_palavra[palavra] = max(scores_palavra[palavra], peso)
 
     # titulo/pergunta do registro
     pergunta_norm = normalizar(registro["pergunta"])
     for palavra in palavras_consulta:
-        if len(palavra) > 2 and palavra in pergunta_norm:
-            pontuacao += 1.5
+        for variante in expansao[palavra]:
+            if len(variante) > 2 and variante in pergunta_norm:
+                peso = 1.5 if variante == palavra else 1.0
+                scores_palavra[palavra] = max(scores_palavra[palavra], peso)
+                break
 
     # orientacao do registro (peso menor — texto longo tem muitos falsos positivos)
     orientacao_norm = normalizar(registro["orientacao"])
     for palavra in palavras_consulta:
-        if len(palavra) > 4 and palavra in orientacao_norm:
-            pontuacao += 0.3
+        for variante in expansao[palavra]:
+            if len(variante) > 4 and variante in orientacao_norm:
+                scores_palavra[palavra] = max(scores_palavra[palavra], 0.3)
+                break
 
-    # normaliza pela quantidade de palavras significativas
+    # exige que pelo menos 2 palavras da consulta tenham algum match
+    # (ou 1 se a consulta tem apenas 1 palavra)
+    palavras_com_match = sum(1 for s in scores_palavra.values() if s > 0)
+    minimo = min(2, len(palavras_consulta))
+    if palavras_com_match < minimo:
+        return 0.0
+
+    pontuacao = sum(scores_palavra.values())
     pontuacao_final = pontuacao / (len(palavras_consulta) * 5.0)
     return min(pontuacao_final, 1.0)
 

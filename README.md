@@ -229,7 +229,7 @@ Este sistema e um **prototipo educacional** desenvolvido como projeto academico 
 
 ## Video de Apresentacao
 
-Link do video: *(a ser adicionado apos gravacao)*
+Link do video: https://youtu.be/S7Cu4tsPA-I
 
 ---
 

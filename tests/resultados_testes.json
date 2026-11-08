@@ -4,9 +4,9 @@
     "acertos": 15,
     "erros": 0,
     "taxa_acerto_pct": 100.0,
-    "tempo_medio_seg": 0.000225,
-    "tempo_maximo_seg": 0.000322,
-    "data_execucao": "2026-11-04 21:01:27"
+    "tempo_medio_seg": 0.001485,
+    "tempo_maximo_seg": 0.002177,
+    "data_execucao": "2026-11-08 14:57:44"
   },
   "resultados": [
     {
@@ -15,9 +15,9 @@
       "pergunta": "Como tirar o CPF?",
       "id_esperado": 1,
       "id_obtido": 1,
-      "score_relevancia": 0.3,
+      "score_relevancia": 0.65,
       "correto": true,
-      "tempo_segundos": 0.000262,
+      "tempo_segundos": 0.002105,
       "descricao": "Pergunta direta que corresponde exatamente a base"
     },
     {
@@ -26,9 +26,9 @@
       "pergunta": "Como fazer uma reclamacao no Procon?",
       "id_esperado": 11,
       "id_obtido": 11,
-      "score_relevancia": 0.6533,
+      "score_relevancia": 0.7667,
       "correto": true,
-      "tempo_segundos": 0.000235,
+      "tempo_segundos": 0.002177,
       "descricao": "Pergunta direta sobre direito do consumidor"
     },
     {
@@ -37,9 +37,9 @@
       "pergunta": "Quero fazer meu documento de identidade, como faco?",
       "id_esperado": 2,
       "id_obtido": 2,
-      "score_relevancia": 0.515,
+      "score_relevancia": 0.6667,
       "correto": true,
-      "tempo_segundos": 0.000282,
+      "tempo_segundos": 0.001841,
       "descricao": "Reformulacao da pergunta sobre RG/CIN"
     },
     {
@@ -48,9 +48,9 @@
       "pergunta": "Preciso de remedio de graca, onde consigo?",
       "id_esperado": 10,
       "id_obtido": 10,
-      "score_relevancia": 0.6667,
+      "score_relevancia": 1.0,
       "correto": true,
-      "tempo_segundos": 0.000228,
+      "tempo_segundos": 0.001879,
       "descricao": "Reformulacao da pergunta sobre Farmacia Popular"
     },
     {
@@ -59,9 +59,9 @@
       "pergunta": "Fui mandado embora do trabalho, tenho direito a algum beneficio?",
       "id_esperado": 14,
       "id_obtido": 14,
-      "score_relevancia": 0.6,
+      "score_relevancia": 0.812,
       "correto": true,
-      "tempo_segundos": 0.000299,
+      "tempo_segundos": 0.002114,
       "descricao": "Reformulacao da pergunta sobre seguro-desemprego"
     },
     {
@@ -70,9 +70,9 @@
       "pergunta": "Como se tornar MEI?",
       "id_esperado": 13,
       "id_obtido": 13,
-      "score_relevancia": 0.15,
+      "score_relevancia": 0.65,
       "correto": true,
-      "tempo_segundos": 0.0002,
+      "tempo_segundos": 0.00138,
       "descricao": "Pergunta direta sobre microempreendedor"
     },
     {
@@ -81,9 +81,9 @@
       "pergunta": "Quero abrir um pequeno negocio formalizado",
       "id_esperado": 13,
       "id_obtido": 13,
-      "score_relevancia": 0.78,
+      "score_relevancia": 0.765,
       "correto": true,
-      "tempo_segundos": 0.000246,
+      "tempo_segundos": 0.0016,
       "descricao": "Reformulacao sobre MEI sem usar a sigla"
     },
     {
@@ -92,9 +92,9 @@
       "pergunta": "Quais sao os direitos do inquilino?",
       "id_esperado": 12,
       "id_obtido": 12,
-      "score_relevancia": 0.2,
+      "score_relevancia": 0.4333,
       "correto": true,
-      "tempo_segundos": 0.000209,
+      "tempo_segundos": 0.001422,
       "descricao": "Pergunta direta sobre direitos de locacao"
     },
     {
@@ -105,7 +105,7 @@
       "id_obtido": null,
       "score_relevancia": 0.0,
       "correto": true,
-      "tempo_segundos": 0.000218,
+      "tempo_segundos": 0.001319,
       "descricao": "Tema nao coberto pela base de conhecimento"
     },
     {
@@ -116,7 +116,7 @@
       "id_obtido": null,
       "score_relevancia": 0.0,
       "correto": true,
-      "tempo_segundos": 0.000251,
+      "tempo_segundos": 0.001196,
       "descricao": "Informacao de emergencia fora do escopo"
     },
     {
@@ -127,7 +127,7 @@
       "id_obtido": null,
       "score_relevancia": 0.0,
       "correto": true,
-      "tempo_segundos": 0.0,
+      "tempo_segundos": 1e-06,
       "descricao": "Entrada vazia - caso limite"
     },
     {
@@ -138,7 +138,7 @@
       "id_obtido": null,
       "score_relevancia": 0.0,
       "correto": true,
-      "tempo_segundos": 0.00018,
+      "tempo_segundos": 0.001112,
       "descricao": "Entrada sem sentido - caso limite"
     },
     {
@@ -149,7 +149,7 @@
       "id_obtido": 1,
       "score_relevancia": 1.0,
       "correto": true,
-      "tempo_segundos": 0.0002,
+      "tempo_segundos": 0.001134,
       "descricao": "Consulta ambigua - retorna resultado mais relevante entre varios possiveis"
     },
     {
@@ -158,9 +158,9 @@
       "pergunta": "Minha familia e de baixa renda, como pedir ajuda do governo?",
       "id_esperado": 8,
       "id_obtido": 8,
-      "score_relevancia": 0.7267,
+      "score_relevancia": 0.8333,
       "correto": true,
-      "tempo_segundos": 0.000322,
+      "tempo_segundos": 0.001443,
       "descricao": "Reformulacao sobre Bolsa Familia / programas sociais"
     },
     {
@@ -169,20 +169,20 @@
       "pergunta": "Como obter desconto na conta de luz?",
       "id_esperado": 16,
       "id_obtido": 16,
-      "score_relevancia": 0.755,
+      "score_relevancia": 0.825,
       "correto": true,
-      "tempo_segundos": 0.000244,
+      "tempo_segundos": 0.001557,
       "descricao": "Pergunta direta sobre Tarifa Social"
     }
   ],
   "interpretacao": {
-    "analise": "O sistema obteve 100.0% de acerto em 15 testes. Tempo medio: 0.23ms. Perguntas diretas tiveram 100% de acerto. Reformulacoes apresentaram bom desempenho gracas a expansao de palavras-chave. Consultas fora do escopo e casos limite foram corretamente identificados.",
+    "analise": "O sistema obteve 100.0% de acerto em 15 testes. O tempo medio de resposta foi de 1.49ms. Perguntas diretas tiveram as maiores taxas de acerto, enquanto reformulacoes e consultas ambiguas representam os principais desafios.",
     "melhorias_sugeridas": [
-      "Implementar sinonimos automaticos e expansao semantica de consultas",
-      "Adicionar processamento de linguagem natural (NLP) com stemming/lematizacao para variacoes morfologicas",
-      "Expandir a base de conhecimento com mais temas (educacao, transporte, habitacao)"
+      "Implementar sinonimos e expansao de consulta para melhorar a correspondencia com reformulacoes",
+      "Adicionar processamento de linguagem natural (NLP) com stemming/lematizacao para capturar variacoes morfologicas",
+      "Expandir a base de conhecimento com mais temas e perguntas frequentes reais"
     ],
-    "limitacoes_avaliacao": "Os testes sao baseados em correspondencia de ID, o que nao captura a qualidade subjetiva da orientacao. A amostra de 15 perguntas e pequena para validacao estatistica robusta. Uma avaliacao mais completa exigiria testes com usuarios reais e metricas de satisfacao."
+    "limitacoes_avaliacao": "Os testes sao baseados em correspondencia de ID, o que nao captura a qualidade da orientacao em si. Alem disso, a amostra de 15 perguntas e pequena para validacao estatistica robusta. Uma avaliacao mais completa exigiria testes com usuarios reais e metricas de satisfacao."
   },
   "teste_usabilidade": {
     "roteiro": [
@@ -198,6 +198,6 @@
       "Satisfacao do usuario com a resposta obtida (escala 1-5)",
       "Clareza das instrucoes e mensagens do sistema"
     ],
-    "observacoes": "O teste de usabilidade deve ser conduzido com pelo menos 3 usuarios representativos do publico-alvo. Recomenda-se protocolo think-aloud."
+    "observacoes": "O teste de usabilidade deve ser conduzido com pelo menos 3 usuarios representativos do publico-alvo (cidadaos com diferentes niveis de familiaridade com tecnologia). Recomenda-se protocolo think-aloud."
   }
 }
